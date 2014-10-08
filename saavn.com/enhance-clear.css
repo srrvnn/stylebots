@@ -1,0 +1,86 @@
+// SET THE WIDTH OF THE DRAWER
+
+.sCroller,
+.sCroll-wrap {
+    width: 245px;
+}
+
+body:not(.radio-on) #drawer:hover, 
+body:not(.radio-on).force-drawer #drawer, 
+body:not(.radio-on) #drawer:hover .queue-actions p, 
+body:not(.radio-on).force-drawer .queue-actions p {
+    width: 200px;
+}
+
+#drawer {
+    width: 200px;
+}
+
+// ADJUST THE MAIN CONTAINER TO THE NEW WIDTH OF THE DRAWER
+
+#main {
+    padding-left: 150px;
+}
+
+// HIDE SAVE AND MORE OPTIONS
+
+#queue-action-btns .btn:not(#queue-clear) {
+    display: none;
+}
+
+#queue-action-btns .btn#queue-clear {
+    display: block;
+}
+
+// MAKE CLEAR AND CLEAR CONFIRM BUTTONS BIG
+
+#queue-action-btns .btn, 
+#clear-confirm {
+    width: 175px;
+    height: 40px;
+    margin-left: 12px;
+    margin-top: 10px;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.queue-actions {
+    height: 60px !important;
+}
+
+// HIDE THE CONFIRM BOX AND POSITION THE CLEAR CONFIRM
+
+.cPanel-wrap.ticked,
+#clear-confirm-panel {
+    visibility: hidden;
+}
+
+#clear-confirm {
+    display: block;
+    visibility: visible;
+    position: fixed;
+    top: 76px;
+    left: 9px;
+}
+
+// ADJUST ELEMENTS INSIDE THE DRAWER
+
+#drawer-queue li .index,
+#drawer-queue li a.actions {
+    display: none;
+}
+
+body:not(.radio-on) #drawer:hover #drawer-queue .key-art,
+body:not(.radio-on).force-drawer #drawer-queue .key-art {
+    transform: none;
+    -webkit-transform: none;
+}
+
+#drawer-queue div.meta {
+    padding-left: 60px;
+}
+
+.queue-actions p, #radio-actions p {
+    display: none;
+}
